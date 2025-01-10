@@ -1,6 +1,10 @@
 function centsToDecimals(cents) {
+  if (typeof cents === "string") return undefined;
+  if (!cents) return 0;
   return cents / 100;
 }
+
+console.log(centsToDecimals());
 
 //
 // function centsToDecimals(cents) {
@@ -15,3 +19,4 @@ function centsToDecimals(cents) {
 // make the test fail
 // make the test pass
 // refactor
+
